@@ -1,0 +1,14 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+  AUS\RedirectComments\:
+    resource: '../Classes/*'
+    exclude: '../Classes/Domain/Model/*'
+  AUS\RedirectComments\EventListener\ModifyRedirectManagementControllerViewDataEventListener:
+    tags:
+      -
+        name: event.listener
+        identifier: a-u-s/redirect-comments/modify-redirect-management-controller-view-data-event-listener
+        event: TYPO3\CMS\Redirects\Event\ModifyRedirectManagementControllerViewDataEvent

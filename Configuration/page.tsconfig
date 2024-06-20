@@ -1,0 +1,5 @@
+# Override Redirect Templates
+
+##################################################
+
+templates.typo3/cms-redirects.1644483509 = andersundsehr/redirect-comments:Resources/Private/Redirects
